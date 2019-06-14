@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Css Spinner Code Along</title>
+  </head>
+  <body>
+    <div class="main">
+      <h1>Title</h1>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde
+        temporibus quisquam voluptas fugiat reiciendis labore eveniet harum
+        asperiores eligendi itaque repellendus quasi, inventore a, veniam
+        architecto rem nostrum, aperiam amet! Odit voluptates saepe dolorem
+        recusandae magnam officiis tempora accusantium quasi exercitationem modi
+        earum nulla quo nobis quibusdam quam, sed architecto veniam rerum
+        tempore amet quia aliquam labore repellendus. Dolore, assumenda. Error
+        unde sit, earum fugit iure ad deleniti totam sint tempore, laboriosam
+        dicta a neque? Veritatis, dolores! Maxime optio molestias eius fugiat
+        repudiandae voluptate quas rerum. Quo temporibus nam placeat. Rerum qui
+        ducimus accusamus, dolorem quibusdam, ratione quaerat a ad molestiae
+        officia voluptatum odio, labore tempora fugiat facilis! Dolor, neque
+        quos! Autem dolorem inventore, exercitationem iure provident sunt
+        expedita nobis.
+      </p>
+    </div>
+    
+    <script>
+      document.querySelector(".main p").style.display = "none";
+      document.querySelector(".main").classList.add("spinner-3");
+
+      // Set timer
+      setTimeout(() => {
+        document.querySelector(".main").classList.remove("spinner-3");
+        document.querySelector(".main p").style.display = "block";
+        
+      }, 4000);
+    </script>
+  </body>
+</html>
